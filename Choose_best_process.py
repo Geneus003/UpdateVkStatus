@@ -16,16 +16,16 @@ def find_best(data):
         elif data[i][1].find("csgo") != -1 and "Играет Counter-strike" not in useful_processes:
             useful_processes.append("Играет Counter-strike")
 
-        elif data[i][1].find("Google") != -1 and "Сидит в Google" not in useful_processes:
+        elif data[i][1].find("chromium") != -1 and "Сидит в Google" not in useful_processes:
             useful_processes.append("Сидит в Google")
 
         elif data[i][1].find("vk") != -1 and "Ждет вас в Vk" not in useful_processes:
             useful_processes.append("Ждет вас в Vk")
 
-        elif data[i][1].find("telegram") != -1 and "Ждет вас в Telegram" not in useful_processes:
-            useful_processes.append("Ждет вас в Telegram")
-
         elif data[i][1].find("minecraft") != -1 and "Фанится с друзьями в Minecraft(ну почему-бы и нет)" not in useful_processes:
             useful_processes.append("Фанится с друзьями в Minecraft(ну почему-бы и нет)")
+
+        elif data[i][1].find("discord") != -1 and "Общается в Discord'e" not in useful_processes:
+            useful_processes.append("Общается в Discord'e")
 
     return useful_processes
