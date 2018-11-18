@@ -1,0 +1,14 @@
+[Unit]
+Description=Program to change vk status
+After=multi-user.target
+
+[Sevice]
+Type=simple
+User=root
+Group=root
+ExecStart=/usr/bin/python3 /home/geneus/Project/UpdateVkStatus/main.py
+WorkingDirectory=/home/geneus/Project/UpdateVkStatus
+
+[Install]
+WantedBy=multi-user.target
+
